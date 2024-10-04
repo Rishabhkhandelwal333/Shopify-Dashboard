@@ -1,0 +1,57 @@
+Project Overview
+This project is a SaaS platform that integrates with the Shopify API to provide a dashboard for viewing and managing orders. Users can register, log in, and view key metrics about their Shopify store, including total orders, total sales, and conversion rates. The dashboard features an automatic refresh mechanism.
+
+Architecture
+The project follows a MERN stack architecture, utilizing the following technologies:
+
+Frontend:
+
+React: A JavaScript library for building user interfaces. The dashboard and authentication components are built using React.
+React Router: For navigation between components (login, registration, dashboard).
+
+Axios: For making API requests to the backend.
+
+Backend:
+
+Node.js/Express: The backend server handles authentication and Shopify API requests.
+MongoDB: Used for storing user data and authentication information.
+
+API Integration:
+
+The project integrates with the Shopify API to fetch order data for display in the dashboard.
+Setup and Installation
+
+To set up and run this project locally, follow these steps:
+
+Clone the Repository:
+
+
+git clone https://github.com/your-username/shopify-dashboard.git
+cd shopify-dashboard
+Install Dependencies: Navigate to both the frontend and server directories and install the necessary dependencies.
+
+bash
+Copy code
+# Frontend
+cd frontend
+npm install
+
+# Server
+cd server
+npm install
+
+Set Up Environment Variables: Create a .env file in the backend directory and add the following variables:
+
+PORT=5000
+MONGO_URI=your_mongodb_uri
+SHOPIFY_API_KEY=your_shopify_api_key
+SHOPIFY_API_SECRET=your_shopify_api_secret
+Start MongoDB: MONGO_URI
+
+Running the Project
+Start the Backend Server: In the backend directory, run:
+npm start
+Start the Frontend: In the frontend directory, run:
+npm start
+
+Access the Application: Open your browser and go to http://localhost:3000 to access the application.
